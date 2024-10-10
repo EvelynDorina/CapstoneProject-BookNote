@@ -1,6 +1,6 @@
 # BookNote Application
 
-BookNote is a web-based book review application where users can add, view, and search book reviews. Users can submit reviews with a rating and see other user reviews as well. This project uses Express.js, PostgreSQL, and EJS.
+BookNote is a web-based book review application where users can add, view, and search book reviews. Users can submit reviews with a rating as well. This project uses Express.js, PostgreSQL, and EJS.
 
 ## Features
 
