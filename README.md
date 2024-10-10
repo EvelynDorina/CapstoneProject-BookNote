@@ -31,6 +31,8 @@ To get started with this project, follow these steps:
 
 3. **Set up the PostgreSQL database**:
 
+   Don't forget create a database before you create and setup table.
+
    CREATE TABLE book_reviews (
 
    id SERIAL PRIMARY KEY,
@@ -59,7 +61,7 @@ To get started with this project, follow these steps:
 
    DB_PORT=5432
 
-   DB_NAME=BookNote or what DataBase you want to use
+   DB_NAME=BookNote or Name you want to use
 
    change enviroment variables in index.js
 
