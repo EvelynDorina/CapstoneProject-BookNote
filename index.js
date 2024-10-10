@@ -118,7 +118,7 @@ app.post("/submit-review", async (req, res) => {
     res.status(500).send("An error occurred while submitting your review.");
   }
 });
-app.post("delete/:id", async (req, res) => {
+app.post("/delete/:id", async (req, res) => {
   const deletedId = req.params.id;
   try {
     const result = await db.query("DELETE  FROM book_reviews WHERE id = $1", [
