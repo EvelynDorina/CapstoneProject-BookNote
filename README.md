@@ -32,21 +32,33 @@ To get started with this project, follow these steps:
 3. **Set up the PostgreSQL database**:
 
    CREATE TABLE book_reviews (
+
    id SERIAL PRIMARY KEY,
+
    title VARCHAR(255) NOT NULL,
+
    isbn VARCHAR(13) NOT NULL,
+
    author VARCHAR(255),
+
    reviews TEXT,
+
    recommend INTEGER,
+
    book_image VARCHAR(255)
+
    );
 
 4. **Update the environment variables**:
 
    DB_USER=your_postgres_user
+
    DB_PASSWORD=your_postgres_password
+
    DB_HOST=localhost
+
    DB_PORT=5432
+
    DB_NAME=BookNote or what DataBase you want to use
 
    change enviroment variables in index.js
