@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<section class="content resultContent">
+  <div class="container searchResults">
+    <h2>Search Results</h2>
+
+    <% if (searchResults.length > 0) { %> <% searchResults.forEach(result => {
+    %>
+    <div class="book-review">
+      <div class="bookImage">
+        <img src="<%= result.book_image %>" alt="" class="bookCover" />
+      </div>
+      <div class="summary">
+        <p><%= result.title %></p>
+        <p>ISBN: <%= result.isbn %></p>
+        <p>Recommendation: <%= result.recommend %>/5</p>
+        <%= result.reviews.length > 100 ? result.reviews.substring(0, 100) +
+        '...' : result.reviews %>
+        <a class="button btn" href="/reviews/<%= result.id %>">for detail</a>
+      </div>
+    </div>
+    <% }) %> <% } else { %>
+    <p>No reviews found for your search.</p>
+    <% } %>
+  </div>
+</section>

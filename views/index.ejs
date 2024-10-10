@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+<body>
+  <section class="cover">
+    <div class="header">
+      <h1 class="title">Welcome to Book-Ku</h1>
+      <p class="subtitle">
+        Store your thought, what you wanna said after reading.
+      </p>
+    </div>
+  </section>
+  <section class="content">
+    <section class="bookNote container">
+      <div class="heading">
+        <h1>Here is it!</h1>
+        <p>
+          After read books I always wants write something and share it to
+          public. Because I love to make it become more public, even thought
+          books popularity is much than mine, but share is never be a bad thing.
+          Just write it and share it.
+        </p>
+      </div>
+      <% notes.forEach(note => { %>
+
+      <div class="book-review">
+        <!-- left -->
+        <div class="bookImage">
+          <img src="<%= note.book_image %>" alt="" class="bookCover" />
+        </div>
+        <!-- right -->
+        <div class="summary">
+          <p class="noteTitle"><%= note.title %></p>
+
+          <p>How much I like this book? <%= note.recommend %>/5</p>
+          <%= note.reviews.length > 100 ? note.reviews.substring(0, 100) + '...'
+          : note.reviews %>
+          <a class="button btn" href="/reviews/<%= note.id %>">for detail</a>
+        </div>
+      </div>
+      <% }) %>
+    </section>
+  </section>
+</body>

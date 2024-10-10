@@ -1,0 +1,135 @@
+.cover {
+  width: 100%;
+  /* height: 90vh; */
+  height: 100%;
+  text-align: center;
+
+  background-color: #257180;
+  color: #fd8b51;
+  /* color: #cb6040; */
+}
+.navlink {
+  font-size: 18px;
+}
+.header {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  background-color: #257180;
+  width: 100%;
+  height: fit-content;
+  margin-top: 0vh;
+  padding-top: 5vh;
+  opacity: 0.9;
+  padding-bottom: 5vh;
+}
+.heading {
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  gap: 10px;
+  margin-top: -2vh;
+}
+.bookNote {
+  background-color: #f2e5bf;
+  height: fit-content;
+
+  width: 90vw;
+  border: 2px;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+.book-review {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* row-gap: 10px; */
+  gap: 15px;
+}
+.button {
+  background-color: #f07b40f5;
+  color: #f2e5bf;
+}
+.button {
+  /* --bs-btn-hover-color: #fd8b51; */
+  --bs-btn-hover-bg: #fd8b51;
+  --bs-btn-hover-color: #f2e5bf;
+  /* opacity: 0.8; */
+}
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.update,
+.delete {
+  background-color: #f07b40f5;
+  color: #f2e5bf;
+  --bs-btn-hover-bg: #fd8b51;
+  --bs-btn-hover-color: #f2e5bf;
+  gap: 10px;
+  margin: 10px;
+}
+.summary p {
+  margin-bottom: 0px;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.noteTitle {
+  font-size: 20px;
+  color: #f07b40f5;
+}
+.search-input {
+  width: 100%;
+}
+.search {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bookCover {
+  width: 100px;
+  height: auto;
+  image-rendering: crisp-edges;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #fd8b51;
+}
+.searchResults {
+  gap: 20px;
+  color: #fd8b51;
+  width: 100%;
+}
+.resultContent {
+  width: 100%;
+  height: 90vh;
+}
+.book-reviews {
+  gap: 20px;
+}
