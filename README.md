@@ -53,9 +53,9 @@ To get started with this project, follow these steps:
 
 4. **Update the environment variables**:
 
-   DB_USER=your_postgres_user
+   DB_USER=your_postgre_user
 
-   DB_PASSWORD=your_postgres_password
+   DB_PASSWORD=your_postgre_password
 
    DB_HOST=localhost
 
