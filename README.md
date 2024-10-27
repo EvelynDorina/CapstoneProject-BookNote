@@ -67,7 +67,7 @@ To get started with this project, follow these steps:
 
 5. **Run the Server**:
 
-   npm instal
+   npm install
 
    This will start the server on http://localhost:3000
 
